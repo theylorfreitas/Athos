@@ -1,0 +1,11 @@
+name: Feature request
+about: Suggest an improvement for Athos
+title: "[Feature] "
+labels: enhancement
+body:
+  - type: textarea
+    attributes:
+      label: Describe the idea
+      description: Explain the problem and the proposed solution.
+    validations:
+      required: true

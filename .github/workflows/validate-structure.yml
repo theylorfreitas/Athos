@@ -1,0 +1,17 @@
+name: Validate structure
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify required files exist
+        run: |
+          test -f README.md
+          test -f CLAUDE.md
+          test -f .gitignore
+          test -f .env.example

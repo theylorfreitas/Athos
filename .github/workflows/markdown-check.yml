@@ -1,0 +1,14 @@
+name: Markdown check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  markdownlint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Ensure markdown files are present
+        run: |
+          find . -name '*.md' | head

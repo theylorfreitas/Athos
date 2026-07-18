@@ -1,0 +1,11 @@
+name: Bug report
+about: Report a problem with Athos
+title: "[Bug] "
+labels: bug
+body:
+  - type: textarea
+    attributes:
+      label: Describe the issue
+      description: Include steps to reproduce and the expected behavior.
+    validations:
+      required: true
